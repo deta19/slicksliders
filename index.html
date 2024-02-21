@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/slick.css">
     <link rel="stylesheet" href="assets/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/slick.min.js"></script>
 </head>
 
@@ -32,158 +34,154 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#columnswidthimageright">Collumns with image right</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#gallery">Gallery</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <style id="columnswidthimageright_style">
+    .section_text_and_image {
+        position: relative;
+        padding-bottom: 80px;
+        margin-bottom: 151px;
+    }
 
-<style id="columnswidthimageright_style">
+    .section_text_and_image .section_title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #F9DA6D;
 
-.section_text_and_image {
-	position: relative;
-	padding-bottom: 80px;
-	margin-bottom: 151px;	
-}
-.section_text_and_image .section_title {
-	position: absolute;
-	top: 0;
-	left:0;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	color: #F9DA6D;
+        font-family: Allura;
+        font-size: 124px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        /* 136.4px */
+        letter-spacing: -3.72px;
+    }
 
-	font-family: Allura;
-	font-size: 124px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 110%; /* 136.4px */
-	letter-spacing: -3.72px;
-}
+    .section_text_and_image .section_text_and_image_wrapper {
+        position: relative;
+    }
 
-.section_text_and_image .section_text_and_image_wrapper {
-	position: relative;
-}
+    .section_text_and_image .left_part {
+        position: relative;
+    }
 
-.section_text_and_image .left_part {
-	position: relative;
-}
+    .section_text_and_image .left_part .content {
+        padding: 150px 15px 15px 0;
+    }
 
-.section_text_and_image .left_part .content {
-	padding: 150px 15px 15px 0;
-}
+    .section_text_and_image .right_part {
+        height: 1039px;
+    }
 
-.section_text_and_image .right_part {
-	height: 1039px;
-}
+    .section_text_and_image .right_part img {
+        visibility: hidden;
+    }
 
-.section_text_and_image .right_part img {
-	visibility: hidden;
-}
+    .section_text_and_image .overlay {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-.section_text_and_image .overlay {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    .section_text_and_image .title {
+        color: #252D39;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 40.8px */
+    }
 
-.section_text_and_image .title {
-	color: #252D39;
-	font-family: Montserrat;
-	font-size: 34px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 120%; /* 40.8px */
-}
+    .section_text_and_image .text {
+        color: #252D39;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 423px;
+        margin-top: 19px;
+        margin-bottom: 62px;
+    }
 
-.section_text_and_image .text {
-    color: #252D39;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    max-width: 423px;
-    margin-top: 19px;
-    margin-bottom: 62px;
-}
+    .section_text_and_image .bottom_description {
+        max-width: 283px;
+        position: absolute;
+        top: initial;
+        bottom: 0;
+        right: 50px;
+    }
 
-.section_text_and_image .bottom_description {
-	max-width: 283px;
-	position: absolute;
-	top: initial;
-	bottom: 0;
-	right: 50px;
-}
+    .section_text_and_image .image_left {
+        position: absolute;
+        left: -210px;
+        top: initial;
+        bottom: 15%;
+    }
 
-.section_text_and_image .image_left {
-	position: absolute;
-	left: -210px;
-	top: initial;
-	bottom: 15%;
-}
-
-.section_text_and_image .image_right {
-    position: absolute;
-    right: -160px;
-    top: 30%;
-}
-
-</style>
-
-<div class="container btns_wrapper_section">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="copytoclipboard('columnswidthimageright_style')" class="btn">copy collumns style</button>
-			<button onclick="copytoclipboard('columnswidthimageright')" class="btn">Copy collumns html</button>
-		</div>
-	</div>
-</div>
-<section id="columnswidthimageright" class="section_text_and_image">
-	<div class="container">
-		<div class="row section_text_and_image_wrapper">
-			<div class="col-12 section_title">
-				Collumns text and images
-			</div>
-			<div class="col-6 left_part">
-				<div class="content">
-					<div class="title">title lorem ipsum</div>
-					<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-					<a href="#" class="btn_line">Button here link</a>
-					<div class="bottom_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</div>
-					<div class="image_left">
-						<img src="assets/img1.jpg" width="210">
-					</div>
-					<div class="image_right">
-						<img src="assets/img2.jpg" width="320">
-					</div>
-				</div>
-			</div>
-			<div class="col-6 right_part">
-				<img src="assets/big.jpg" class="img-fluid" width="960">
-			</div>
-			
-		</div>
-	</div>
-	<div class="overlay" style="background-image: url(assets/big.jpg);"></div>
-</section>
-
-
-<style id="filters_css" type="text/css">
-	 /* filter */
+    .section_text_and_image .image_right {
+        position: absolute;
+        right: -160px;
+        top: 30%;
+    }
+    </style>
+    <div class="container btns_wrapper_section">
+        <div class="row">
+            <div class="col-12">
+                <button onclick="copytoclipboard('columnswidthimageright_style')" class="btn">copy collumns style</button>
+                <button onclick="copytoclipboard('columnswidthimageright')" class="btn">Copy collumns html</button>
+            </div>
+        </div>
+    </div>
+    <section id="columnswidthimageright" class="section_text_and_image">
+        <div class="container">
+            <div class="row section_text_and_image_wrapper">
+                <div class="col-12 section_title">
+                    Collumns text and images
+                </div>
+                <div class="col-6 left_part">
+                    <div class="content">
+                        <div class="title">title lorem ipsum</div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <a href="#" class="btn_line">Button here link</a>
+                        <div class="bottom_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</div>
+                        <div class="image_left">
+                            <img src="assets/img1.jpg" width="210">
+                        </div>
+                        <div class="image_right">
+                            <img src="assets/img2.jpg" width="320">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 right_part">
+                    <img src="assets/big.jpg" class="img-fluid" width="960">
+                </div>
+            </div>
+        </div>
+        <div class="overlay" style="background-image: url(assets/big.jpg);"></div>
+    </section>
+    <style id="filters_css" type="text/css">
+    /* filter */
 
     .filter_grid {
         background: #F5F5F5;
@@ -348,12 +346,11 @@
     }
 
     /* end filter*/
-</style>
-<script id="filters_script">
+    </style>
+    <script id="filters_script">
+        jQuery(document).ready( function() {
 
-jQuery(document).ready( function() {
-
-	if (jQuery('.section_filters_list').length > 0) {
+    if (jQuery('.section_filters_list').length > 0) {
 
         jQuery('.section_filters_list input').click(function() {
             var checkbox_vals = jQuery('.section_filters_list input[name="filters"]:checked');
@@ -381,406 +378,405 @@ jQuery(document).ready( function() {
 })
 
 </script>
-<div class="container btns_wrapper_section">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="copytoclipboard('filters_css')" class="btn">copy collumns style</button>
-			<button onclick="copytoclipboard('filters_script')" class="btn">copy collumns js code</button>
-			<button onclick="copytoclipboard('filters')" class="btn">Copy html</button>
-		</div>
-	</div>
-</div>
-<section id="filters" class="filter_grid">
-    <div class="container">
+    <div class="container btns_wrapper_section">
         <div class="row">
             <div class="col-12">
-                <div class="title">Filter structure</div>
-                <div class="filter_wrapper">
-                    <div class="title">filtrare</div>
-                    <ul class="section_filters_list">
-                        <li class="item">
-                            <label class="cstm_input_design">
-                                <input type="checkbox" name="filters" value="type1">Type 1
-                                <span class="checkmark"></span></label>
-                        </li>
-                        <li class="item">
-                            <label class="cstm_input_design">
-                                <input type="checkbox" name="filters" value="type2">type 2
-                                <span class="checkmark"></span></label>
-                        </li>
-                        <li class="item">
-                            <label class="cstm_input_design">
-                                <input type="checkbox" name="filters" value="type3">type 3
-                                <span class="checkmark"></span></label>
-                        </li>
-                        <li class="item">
-                            <label class="cstm_input_design">
-                                <input type="checkbox" name="filters" value="type4">type 4
-                                <span class="checkmark"></span></label>
-                        </li>
-                        <li class="item">
-                            <label class="cstm_input_design">
-                                <input type="checkbox" name="filters" value="type5">type5
-                                <span class="checkmark"></span></label>
-                        </li>
-                        <li class="item">
-                            <label class="cstm_input_design">
-                                <input type="checkbox" name="filters" value="type6">type6
-                                <span class="checkmark"></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filters_elements_grid">
-                    <div class="filter_list_item type1">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
-                        </div>
-                        <div class="elem_type">Type 1</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
-                        </div>
+                <button onclick="copytoclipboard('filters_css')" class="btn">copy collumns style</button>
+                <button onclick="copytoclipboard('filters_script')" class="btn">copy collumns js code</button>
+                <button onclick="copytoclipboard('filters')" class="btn">Copy html</button>
+            </div>
+        </div>
+    </div>
+    <section id="filters" class="filter_grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title">Filter structure</div>
+                    <div class="filter_wrapper">
+                        <div class="title">filtrare</div>
+                        <ul class="section_filters_list">
+                            <li class="item">
+                                <label class="cstm_input_design">
+                                    <input type="checkbox" name="filters" value="type1">Type 1
+                                    <span class="checkmark"></span></label>
+                            </li>
+                            <li class="item">
+                                <label class="cstm_input_design">
+                                    <input type="checkbox" name="filters" value="type2">type 2
+                                    <span class="checkmark"></span></label>
+                            </li>
+                            <li class="item">
+                                <label class="cstm_input_design">
+                                    <input type="checkbox" name="filters" value="type3">type 3
+                                    <span class="checkmark"></span></label>
+                            </li>
+                            <li class="item">
+                                <label class="cstm_input_design">
+                                    <input type="checkbox" name="filters" value="type4">type 4
+                                    <span class="checkmark"></span></label>
+                            </li>
+                            <li class="item">
+                                <label class="cstm_input_design">
+                                    <input type="checkbox" name="filters" value="type5">type5
+                                    <span class="checkmark"></span></label>
+                            </li>
+                            <li class="item">
+                                <label class="cstm_input_design">
+                                    <input type="checkbox" name="filters" value="type6">type6
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="filter_list_item type1">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
+                    <div class="filters_elements_grid">
+                        <div class="filter_list_item type1">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">Type 1</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                        <div class="elem_type">Type 1</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
+                        <div class="filter_list_item type1">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">Type 1</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter_list_item type2">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
+                        <div class="filter_list_item type2">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type type2">dtype 2</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                        <div class="elem_type type2">dtype 2</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
+                        <div class="filter_list_item type2">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">dtype 2</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter_list_item type2">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
+                        <div class="filter_list_item type3">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">type 3</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                        <div class="elem_type">dtype 2</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
+                        <div class="filter_list_item type3">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">type 3</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter_list_item type3">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
+                        <div class="filter_list_item type3">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">type 3</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                        <div class="elem_type">type 3</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
+                        <div class="filter_list_item type5">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">type5</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter_list_item type3">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
-                        </div>
-                        <div class="elem_type">type 3</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
-                        </div>
-                    </div>
-                    <div class="filter_list_item type3">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
-                        </div>
-                        <div class="elem_type">type 3</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
-                        </div>
-                    </div>
-                    <div class="filter_list_item type5">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
-                        </div>
-                        <div class="elem_type">type5</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
-                        </div>
-                    </div>
-                    <div class="filter_list_item type5">
-                        <div class="image_elem">
-                            <img src="assets/image_elem.jpg" width="190">
-                        </div>
-                        <div class="elem_type">type5</div>
-                        <div class="elem_price">50.000 $</div>
-                        <div class="elem_surface">75 sq</div>
-                        <div class="elem_details_type">75 sq</div>
-                        <div class="btn_wrapper">
-                            <a href="#" class="btn">Details</a>
+                        <div class="filter_list_item type5">
+                            <div class="image_elem">
+                                <img src="assets/image_elem.jpg" width="190">
+                            </div>
+                            <div class="elem_type">type5</div>
+                            <div class="elem_price">50.000 $</div>
+                            <div class="elem_surface">75 sq</div>
+                            <div class="elem_details_type">75 sq</div>
+                            <div class="btn_wrapper">
+                                <a href="#" class="btn">Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <style id="gallery_css" type="text/css">
+    .ai_gallery .gallery_wrapper {
+        align-items: center;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol1 {
+        flex: 0 0 auto;
+        width: 16.97%;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol2 {
+        flex: 0 0 auto;
+        width: 33.87%;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol3 {
+        flex: 0 0 auto;
+        width: 25.40%;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol4 {
+        flex: 0 0 auto;
+        width: 23.76%;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol1 .grow {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 21px;
+        padding-bottom: 15px;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol2 .grow {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 21px;
+        padding-bottom: 15px;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol3 .grow {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 21px;
+        padding-bottom: 15px;
+    }
+
+    .ai_gallery .gallery_wrapper .gcol4 .grow {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    </style>
+    <div class="container btns_wrapper_section">
+        <div class="row">
+            <div class="col-12">
+                <button onclick="copytoclipboard('gallery_css')" class="btn">copy collumns style</button>
+                <button onclick="copytoclipboard('gallery')" class="btn">Copy html</button>
+            </div>
+        </div>
     </div>
-</section>
+    <section id="gallery" class="ai_gallery">
+        <div class="container">
+            <div class="row gallery_wrapper">
+                <div class="gcol1">
+                    <div class="grow">
+                        <img src="assets/gallery/g1.jpg" class="img-fluid">
+                    </div>
+                    <div class="grow">
+                        <img src="assets/gallery/g2.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="gcol2">
+                    <div class="grow">
+                        <img src="assets/gallery/g3.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="gcol3">
+                    <div class="grow">
+                        <img src="assets/gallery/g4.jpg" class="img-fluid">
+                    </div>
+                    <div class="grow">
+                        <img src="assets/gallery/g5.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="gcol4">
+                    <div class="grow">
+                        <img src="assets/gallery/g6.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style id="background_section_css" type="text/css">
+    .background_section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 940px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
 
-<style id="gallery_css" type="text/css">
-	
-.ai_gallery .gallery_wrapper {
-    align-items: center;
-}
+        margin-bottom: 180px;
+    }
 
-.ai_gallery .gallery_wrapper .gcol1 {
-	flex: 0 0 auto;
-	width: 16.97%;
-}
-.ai_gallery .gallery_wrapper .gcol2 {
-	flex: 0 0 auto;
-	width: 33.87%;
-}
-.ai_gallery .gallery_wrapper .gcol3 {
-	flex: 0 0 auto;
-	width: 25.40%;
-}
-.ai_gallery .gallery_wrapper .gcol4 {
-	flex: 0 0 auto;
-	width: 23.76%;
-}
+    .background_section .section_description {
+        color: #FFF;
 
-.ai_gallery .gallery_wrapper .gcol1 .grow {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100%;
-	padding-right: 21px;
-	padding-bottom: 15px;
-}
-.ai_gallery .gallery_wrapper .gcol2 .grow {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100%;
-	padding-right: 21px;
-	padding-bottom: 15px;
-}
-.ai_gallery .gallery_wrapper .gcol3 .grow {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100%;
-	padding-right: 21px;
-	padding-bottom: 15px;
-}
-.ai_gallery .gallery_wrapper .gcol4 .grow {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 100%;
-	padding-bottom: 15px;
-}
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
 
+        margin-bottom: 55px;
+    }
 
-</style>
+    .number_section {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin-bottom: 117px;
+    }
 
-<div class="container btns_wrapper_section">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="copytoclipboard('gallery_css')" class="btn">copy collumns style</button>
-			<button onclick="copytoclipboard('gallery')" class="btn">Copy html</button>
-		</div>
-	</div>
-</div>
-<section id="gallery" class="ai_gallery">
-	<div class="container">
-		<div class="row gallery_wrapper">
-			<div class="gcol1">
-				<div class="grow">
-					<img src="assets/gallery/g1.jpg" class="img-fluid">
-				</div>
-				<div class="grow">
-					<img src="assets/gallery/g2.jpg" class="img-fluid">
-				</div>
-			</div>
-			<div class="gcol2">
-				<div class="grow">
-					<img src="assets/gallery/g3.jpg" class="img-fluid">
-				</div>
-			</div>
-			<div class="gcol3">
-				<div class="grow">
-					<img src="assets/gallery/g4.jpg" class="img-fluid">
-				</div>
-				<div class="grow">
-					<img src="assets/gallery/g5.jpg" class="img-fluid">
-				</div>
-			</div>
-			<div class="gcol4">
-				<div class="grow">
-					<img src="assets/gallery/g6.jpg" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    .number_section .item {
+        flex: 0 0 auto;
+        width: 25%;
+        position: relative;
+    }
 
+    .number_section .item .number {
+        position: relative;
+        color: #FFF;
 
-<style id="background_section_css" type="text/css">
-	
-.background_section {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 940px;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    
-    margin-bottom: 180px;
-}
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        /* 44px */
+        z-index: 1;
+    }
 
-.background_section .section_description {
-	color: #FFF;
+    .number_section .item .number_shadow {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #FFF;
 
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 150%;
-	
-	margin-bottom: 55px;
-}
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        /* 70.4px */
 
-.number_section {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: center;
-	margin-bottom: 117px;
-}
+        opacity: 0.6;
+        z-index: 0;
+    }
 
-.number_section .item{
-	flex: 0 0 auto;
-	width: 25%;
-	position: relative;
-}
+    .number_section .item .txt {
+        color: #FFF;
 
-.number_section .item .number{
-	position: relative;
-	color: #FFF;
-
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 110%; /* 44px */
-	z-index: 1;
-}
-.number_section .item .number_shadow{
-	position: absolute;
-	top: -30px;
-	left: 50%;
-	transform: translateX(-50%);
-	color: #FFF;
-
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 64px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 110%; /* 70.4px */
-	
-	opacity: 0.6;
-	z-index: 0;	
-}
-
-.number_section .item .txt {
-	color: #FFF;
-
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 140%; /* 16.8px */
-	letter-spacing: 7.2px;
-}
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 16.8px */
+        letter-spacing: 7.2px;
+    }
 
 
-.img-fluid {
-	max-width: 100%;
-	object-fit: cover;
-}
-
-</style>
-
-<div class="container btns_wrapper_section">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="copytoclipboard('background_section_css')" class="btn">copy collumns style</button>
-			<button onclick="copytoclipboard('background_section')" class="btn">Copy html</button>
-		</div>
-	</div>
-</div>
-<section id="background_section" class="background_section" style="background-image: url(assets/sectionbg_image.jpg);">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="number_section">
-					<div class="item">
-						<div class="number">8</div>
-						<div class="number_shadow">8</div>
-						<div class="txt">Some <br/>text</div>
-					</div>
-					<div class="item">
-						<div class="number">15</div>
-						<div class="number_shadow">15</div>
-						<div class="txt">Some <br/>text</div>
-					</div>
-					<div class="item">
-						<div class="number">78%</div>
-						<div class="number_shadow">78%</div>
-						<div class="txt">Some <br/>text</div>
-					</div>
-					<div class="item">
-						<div class="number">500</div>
-						<div class="number_shadow">500</div>
-						<div class="txt">Some <br/>text</div>
-					</div>
-				</div>
-				<div class="section_description">
-					<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-				</div>
-				<a href="#cereoferta" class="btn_white">Details</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<style id="slider1_css">
-	/* slider */
+    .img-fluid {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    </style>
+    <div class="container btns_wrapper_section">
+        <div class="row">
+            <div class="col-12">
+                <button onclick="copytoclipboard('background_section_css')" class="btn">copy collumns style</button>
+                <button onclick="copytoclipboard('background_section')" class="btn">Copy html</button>
+            </div>
+        </div>
+    </div>
+    <section id="background_section" class="background_section" style="background-image: url(assets/sectionbg_image.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="number_section">
+                        <div class="item">
+                            <div class="number">8</div>
+                            <div class="number_shadow">8</div>
+                            <div class="txt">Some <br />text</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">15</div>
+                            <div class="number_shadow">15</div>
+                            <div class="txt">Some <br />text</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">78%</div>
+                            <div class="number_shadow">78%</div>
+                            <div class="txt">Some <br />text</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">500</div>
+                            <div class="number_shadow">500</div>
+                            <div class="txt">Some <br />text</div>
+                        </div>
+                    </div>
+                    <div class="section_description">
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <a href="#cereoferta" class="btn_white">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style id="slider1_css">
+    /* slider */
     .slider_type1 .slide_item {
         white-space: nowrap;
     }
@@ -853,10 +849,9 @@ jQuery(document).ready( function() {
     }
 
     /* end slider */
-</style>
-<script id="slider1_js">
-	
-	  jQuery(document).ready(function() {
+    </style>
+    <script id="slider1_js">
+        jQuery(document).ready(function() {
         
 
         if (jQuery('.slider_type1').length > 0) {
@@ -896,103 +891,101 @@ jQuery(document).ready( function() {
 
 
 </script>
-<div class="container btns_wrapper_section">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="copytoclipboard('slider1_css')" class="btn">copy style</button>
-			<button onclick="copytoclipboard('slider1_js')" class="btn">Copy JS</button>
-			<button onclick="copytoclipboard('slider1')" class="btn">Copy html</button>
-		</div>
-	</div>
-</div>
-<section id="slider1" class="sldier_section slidetype0">
-    <div class="container">
+    <div class="container btns_wrapper_section">
         <div class="row">
             <div class="col-12">
-                <div class="slider_navigation_cstm"></div>
-                <div class="slider_type1">
-                    <div class="slide_item">
-                        <div class="year_section">2023</div>
-                        <div class="image"></div>
-                        <div class="text_content">
-                            <div class="title">Lorem ipsum title</div>
-                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                <button onclick="copytoclipboard('slider1_css')" class="btn">copy style</button>
+                <button onclick="copytoclipboard('slider1_js')" class="btn">Copy JS</button>
+                <button onclick="copytoclipboard('slider1')" class="btn">Copy html</button>
+            </div>
+        </div>
+    </div>
+    <section id="slider1" class="sldier_section slidetype0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="slider_navigation_cstm"></div>
+                    <div class="slider_type1">
+                        <div class="slide_item">
+                            <div class="year_section">2023</div>
+                            <div class="image"></div>
+                            <div class="text_content">
+                                <div class="title">Lorem ipsum title</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide_item">
-                        <div class="year_section">2022</div>
-                        <div class="image"></div>
-                        <div class="text_content">
-                            <div class="title">Lorem ipsum title new</div>
-                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="slide_item">
+                            <div class="year_section">2022</div>
+                            <div class="image"></div>
+                            <div class="text_content">
+                                <div class="title">Lorem ipsum title new</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide_item">
-                        <div class="year_section">2021</div>
-                        <div class="image"></div>
-                        <div class="text_content">
-                            <div class="title">Lansare vânzări Faza III</div>
-                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="slide_item">
+                            <div class="year_section">2021</div>
+                            <div class="image"></div>
+                            <div class="text_content">
+                                <div class="title">Lansare vânzări Faza III</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide_item">
-                        <div class="year_section">2020</div>
-                        <div class="image"></div>
-                        <div class="text_content">
-                            <div class="title">Lorem ipsum title</div>
-                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="slide_item">
+                            <div class="year_section">2020</div>
+                            <div class="image"></div>
+                            <div class="text_content">
+                                <div class="title">Lorem ipsum title</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide_item">
-                        <div class="year_section">2019</div>
-                        <div class="image"></div>
-                        <div class="text_content">
-                            <div class="title">Lorem ipsum title new</div>
-                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="slide_item">
+                            <div class="year_section">2019</div>
+                            <div class="image"></div>
+                            <div class="text_content">
+                                <div class="title">Lorem ipsum title new</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide_item">
-                        <div class="year_section">2018</div>
-                        <div class="image"></div>
-                        <div class="text_content">
-                            <div class="title">Lansare vânzări Faza III</div>
-                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                        <div class="slide_item">
+                            <div class="year_section">2018</div>
+                            <div class="image"></div>
+                            <div class="text_content">
+                                <div class="title">Lansare vânzări Faza III</div>
+                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <script id="slider2_js">
+        jQuery(document).ready(function() {
+    if( jQuery('.slider_type2').length > 0 ) {
+        $('.slider_type2').slick({
+            slidesToShow: 1,
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            appendArrows: jQuery('.sldtype2 .slider_navigation_cstm'),
+            prevArrow: '<span class="slick-prev pull-left carousel-btns"><svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H28V3.5H1V4.5Z" fill="black"/></svg></span>',
+            nextArrow: '<span class="slick-next pull-right carousel-btns"><svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.3536 3.64645C27.5488 3.84171 27.5488 4.15829 27.3536 4.35355L24.1716 7.53553C23.9763 7.7308 23.6597 7.7308 23.4645 7.53553C23.2692 7.34027 23.2692 7.02369 23.4645 6.82843L26.2929 4L23.4645 1.17157C23.2692 0.976311 23.2692 0.659728 23.4645 0.464466C23.6597 0.269204 23.9763 0.269204 24.1716 0.464466L27.3536 3.64645ZM27 4.5H0V3.5H27V4.5Z" fill="black"/></svg></span>',
+        });
 
-<script id="slider2_js">
-
-jQuery(document).ready(function() {
-	if( jQuery('.slider_type2').length > 0 ) {
-	 	$('.slider_type2').slick({
-			slidesToShow: 1,
-		  	dots: false,
-			infinite: true,
-			autoplay: true,
-			appendArrows: jQuery('.sldtype2 .slider_navigation_cstm'),
-			prevArrow: '<span class="slick-prev pull-left carousel-btns"><svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H28V3.5H1V4.5Z" fill="black"/></svg></span>',
-    		nextArrow: '<span class="slick-next pull-right carousel-btns"><svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.3536 3.64645C27.5488 3.84171 27.5488 4.15829 27.3536 4.35355L24.1716 7.53553C23.9763 7.7308 23.6597 7.7308 23.4645 7.53553C23.2692 7.34027 23.2692 7.02369 23.4645 6.82843L26.2929 4L23.4645 1.17157C23.2692 0.976311 23.2692 0.659728 23.4645 0.464466C23.6597 0.269204 23.9763 0.269204 24.1716 0.464466L27.3536 3.64645ZM27 4.5H0V3.5H27V4.5Z" fill="black"/></svg></span>',
-		});
-
-	}
+    }
 
 })
-	
+    
 
 </script>
-<style id="slider2_css" type="text/css">
-	 .sldier_section {
+    <style id="slider2_css" type="text/css">
+    .sldier_section {
         margin-bottom: 117px;
     }
 
     .sldier_section.sldtype2 .slider_navigation_cstm {
-	    margin-top: 80px;
-	}
+        margin-top: 80px;
+    }
 
     .sldier_section .slider_navigation_cstm {
         display: flex;
@@ -1049,56 +1042,727 @@ jQuery(document).ready(function() {
     .sldier_section .slider_navigation_cstm .slick-next.slick-disabled:before {
         display: none;
     }
+    </style>
+    <div class="container btns_wrapper_section">
+        <div class="row">
+            <div class="col-12">
+                <button onclick="copytoclipboard('slider2_css')" class="btn">copy style</button>
+                <button onclick="copytoclipboard('slider2_js')" class="btn">Copy JS</button>
+                <button onclick="copytoclipboard('slider2')" class="btn">Copy html</button>
+            </div>
+        </div>
+    </div>
+    <section id="slider2" class="sldier_section sldtype2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="slider_type2">
+                        <div class="slide_item">
+                            <div class="image_wrapper">
+                                <img src="assets/about_img.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="image_wrapper">
+                                <img src="assets/about_img.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="image_wrapper">
+                                <img src="assets/about_img.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_navigation_cstm"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style id="programs_style" type="text/css">
+    .section_border {
+        border-bottom: 1px solid #D1D3D5;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        margin-bottom: 80px;
+    }
 
+    .section_border span {
+        font-family: "DM Sans", serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        color: #6F90A4;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex.cols_3 {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .flex.cols_3 .col {
+        flex: 0 0 auto;
+        width: 33.3333333%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .col_icon {
+        min-height: 200px;
+    }
+
+    .col_icon img {
+        max-height: 100%;
+    }
+
+    .col_small_title {
+        color: #00263C;
+        font-family: "DM Sans", serif;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    .col_title {
+        color: #00263C;
+        font-family: "DM Serif Display", serif;
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 20px;
+        font-weight: regular;
+    }
+
+    .col_description {
+        color: #00263C;
+        font-family: "DM Sans", serif;
+        font-size: 22px;
+        line-height: 145%;
+        margin-bottom: 0;
+    }
+    </style>
+    <section id="programs" class="programs Home">
+        <div class="container btns_wrapper_section">
+            <div class="row">
+                <div class="col-12">
+                    <button onclick="copytoclipboard('programs_style')" class="btn">copy style</button>
+                    <button onclick="copytoclipboard('programs')" class="btn">Copy html</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section_border">
+                <span>Lorem ipsum</span>
+            </div>
+            <div class="flex cols_3">
+                <div class="col text-center">
+                    <div class="col_icon">
+                        <img src="https://cdni.iconscout.com/illustration/premium/preview/customer-service-operator-5482503-4598841.png?f=webp&h=200" alt="">
+                    </div>
+                    <div class="col_small_title">Lorem ipsum</div>
+                    <div class="col_title">Lorem ipsum dolor sit <br>
+                        amet</div>
+                    <div class="col_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="col text-center">
+                    <div class="col_icon">
+                        <img src="https://cdni.iconscout.com/illustration/premium/preview/customer-service-operator-5482503-4598841.png?f=webp&h=200" alt="">
+                    </div>
+                    <div class="col_small_title">Lorem ipsum</div>
+                    <div class="col_title">Lorem ipsum dolor sit <br>
+                        amet</div>
+                    <div class="col_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="col text-center">
+                    <div class="col_icon">
+                        <img src="https://cdni.iconscout.com/illustration/premium/preview/customer-service-operator-5482503-4598841.png?f=webp&h=200" alt="">
+                    </div>
+                    <div class="col_small_title">Lorem ipsum</div>
+                    <div class="col_title">Lorem ipsum dolor sit <br>
+                        amet</div>
+                    <div class="col_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style id="history_css" type="text/css">
+    .history {
+        background: #00263C;
+    }
+
+    .history .content_wrap {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .history .img_bottom {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        margin-top: -150px;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .history .section_title {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 70px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .history .section_description.bigger {
+        font-family: "DM Sans";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+    }
+
+    .history .section_description {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 790px;
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+    }
+
+    .view_more {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    a.border-btn,
+    a.border-btn:visited,
+    .border-btn {
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        border: 1px solid #fff;
+        text-decoration: none;
+        padding: 10px 25px;
+    }
+    </style>
+    <section id="history" class="history Home" style="background-color: #00263c">
+        <div class="container btns_wrapper_section">
+            <div class="row">
+                <div class="col-12">
+                    <button onclick="copytoclipboard('history_css')" class="btn">copy style</button>
+                    <button onclick="copytoclipboard('history')" class="btn">Copy html</button>
+                </div>
+            </div>
+        </div>
+        <div class="container content_wrap">
+            <div class="section_title">Lorem ipsum dolor sit amet</div>
+            <div class="section_description bigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+            <div class="section_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+            <div class="view_more">
+                <a class="border-btn" href="#">view more</a>
+            </div>
+        </div>
+        <div class="img_bottom">
+            <img src="https://images.unsplash.com/photo-1611323340350-bdcc0e6cfae5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="unsplash.com">
+        </div>
+    </section>
+    <style id="yellowsectionold_css" type="text/css">
+    .yellow_section_two_cols {
+        background: linear-gradient(278.5deg, #D6B36A -0.56%, #FFE3AA 43.6%, #FFF8E9 100.38%);
+        padding: 0 0;
+    }
+
+    .yellow_section_two_cols .flex {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: start;
+    }
+
+    .yellow_section_two_cols .flex .left {
+        flex: 0 0 50%;
+        padding-top: 75px;
+        padding-bottom: 15px;
+    }
+
+    .yellow_section_two_cols .flex .right {
+        flex: 0 0 50%;
+    }
+
+    .yellow_section_two_cols .title {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 70px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #00263C;
+    }
+
+    .yellow_section_two_cols .description {
+        font-family: DM Sans;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .yellow_section_two_cols .btn_wrapper {
+        margin-top: 50px;
+        margin-bottom: 95px;
+    }
+
+    a.blue-btn,
+    a.blue-btn:visited,
+    .blue-btn {
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        background: #0E52D7;
+        color: #fff;
+        padding: 15px 24px 15px 24px;
+    }
+
+    .yellow_section_two_cols .list_with_tick {
+        margin-bottom: 30px;
+    }
+
+    .list_with_tick .item {
+        position: relative;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #005577;
+        padding-left: 20px;
+    }
+
+    .list_with_tick .item:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 6px;
+        background: url();
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .list_border_items {
+        list-style: none;
+        margin: 0 0;
+        padding: 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .list_border_items .item {
+        flex: 0 0 auto;
+        width: auto;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #005577;
+        padding: 7px 15px 7px 15px;
+        border: 1px solid #005577;
+    }
+
+    .yellow_section_two_cols .image img {
+        margin-bottom: -3px;
+    }
+    </style>
+    <section id="yellowsectionold" class="yellow_section_two_cols">
+        <div class="container btns_wrapper_section">
+            <div class="row">
+                <div class="col-12">
+                    <button onclick="copytoclipboard('yellowsectionold_css')" class="btn">copy style</button>
+                    <button onclick="copytoclipboard('yellowsectionold')" class="btn">Copy html</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flex">
+                <div class="left">
+                    <div class="title">Lorem ipsum dolor</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="btn_wrapper">
+                        <a href="#" class="blue-btn">view more</a>
+                    </div>
+                    <ul class="list_with_tick">
+                        <li class="item">Lorem ipsum dolor sit amet</li>
+                        <li class="item">Lorem ipsum dolor sit amet</li>
+                        <li class="item">Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    <ul class="list_border_items">
+                        <li class="item">#tag</li>
+                        <li class="item">#tag</li>
+                        <li class="item">#tag</li>
+                        <li class="item">#tag</li>
+                        <li class="item">#tag</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="image">
+                        <img src="https://cdni.iconscout.com/illustration/premium/preview/customer-service-operator-5482503-4598841.png?f=webp&h=700" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style id="events_slider_css" type="text/css">
+    .green_section {
+        background: #F1F1E6;
+    }
+
+    .section_border {
+        border-bottom: 1px solid #D1D3D5;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        margin-bottom: 80px;
+    }
+
+    .section_border span {
+        font-family: "DM Sans", serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        color: #6F90A4;
+    }
+
+    .collumns_wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: start;
+    }
+
+    .collumns_wrapper .col2 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .green_section .title {
+        font-family: DM Serif Display;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 70px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .green_section .description {
+        font-family: DM Sans;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        margin-bottom: 55px;
+
+    }
+
+    .btn_wrapper {
+        padding: 15px 0;
+    }
+
+    .slidernav_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 10px;
+    }
+
+    .slidernav_wrapper .customdots {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .customdots .slick-dots li {
+        display: inline-block;
+        color: #A9C5E5;
+        border: 1px solid #A9C5E5;
+        text-indent: -999px;
+        width: 16px;
+        height: 10px;
+        overflow: hidden;
+        background: #00263C;
+        border-radius: 15px;
+    }
+
+    .slidernav_wrapper .navigationbar {
+        flex: 0 0 auto;
+        width: 50%;
+        text-align: right;
+    }
+
+    .navigationbar .slick-arrow {
+        padding: 15px 15px 10px 15px;
+        border: 1px solid #00263C;
+        margin-right: 10px;
+    }
+
+    .slidernav_wrapper .navigationbar {
+        flex: 0 0 auto;
+        width: 50%;
+        text-align: right;
+    }
+
+
+    .navigationbar .slick-arrow.slick-disabled {
+        border-color: #A9C5E5;
+    }
+
+    .navigationbar .slick-arrow.slick-disabled svg path {
+        fill: #A9C5E5;
+
+    }
+
+    .navigationbar .slick-arrow:last-child {
+        margin-right: 0;
+    }
+
+    .navigationbar .slick-arrow svg path {
+        fill: #00263C;
+
+    }
+
+
+
+    .customdots .slick-dots li.slick-active {
+        width: 27px;
+    }
+
+    .slider_top_nav .slidetitle {
+        font-family: "DM Serif Display";
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .slider_top_nav .slide_item {
+        padding: 0 10px;
+    }
+
+    .slider_top_nav .slide_details {
+        display: flex;
+        flex-flow: wrap;
+        margin: 15px 0;
+    }
+
+    .slider_top_nav .date {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: #6F90A4;
+        padding-right: 10px;
+        border-right: 1px solid #6F90A4;
+
+
+    }
+
+    .slider_top_nav .location {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #6F90A4;
+
+        padding-left: 10px;
+    }
+
+    .slidernav_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 10px;
+    }
+
+    .slidernav_wrapper .customdots {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    a.border-btn.blue,
+    a.border-btn.blue:visited,
+    .border-btn.blue {
+        color: #0E52D7;
+        border: 1px solid #0E52D7;
+    }
+
+    a.border-btn,
+    a.border-btn:visited,
+    .border-btn {
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        border: 1px solid #fff;
+        text-decoration: none;
+        padding: 10px 25px;
+    }
+    </style>
+    <script id="events_slider_js">
+        jQuery(function(){
     
+    if( jQuery('.slider_top_nav').length>0 ) {
+        $('.slider_top_nav').slick({
+            centerPadding: '15px',
+            slidesToShow: 2,
+            dots: true,
+            infinite: false,
+            autoplay: true,
+            appendDots: $('.slider_top_nav_wrapper .customdots'),
+            appendArrows: $('.slider_top_nav_wrapper .navigationbar'),
+            prevArrow: '<span class="slick-prev pull-left carousel-btns"><svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.27745 0.623431C8.75674 0.102737 7.91252 0.102737 7.39183 0.623431L0.725149 7.29012C0.204482 7.81079 0.204482 8.65506 0.725149 9.17573L7.39183 15.8424C7.91252 16.3631 8.75674 16.3631 9.27745 15.8424C9.79814 15.3217 9.79814 14.4775 9.27745 13.9568L3.55356 8.23293L9.27745 2.50906C9.79814 1.98835 9.79814 1.14414 9.27745 0.623431Z" fill="#00263C"/></svg></span>',
+            nextArrow: '<span class="slick-next pull-right carousel-btns"><svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.722552 0.623431C1.24326 0.102737 2.08748 0.102737 2.60817 0.623431L9.27485 7.29012C9.79552 7.81079 9.79552 8.65506 9.27485 9.17573L2.60817 15.8424C2.08748 16.3631 1.24326 16.3631 0.722552 15.8424C0.201858 15.3217 0.201858 14.4775 0.722552 13.9568L6.44644 8.23293L0.722552 2.50906C0.201858 1.98835 0.201858 1.14414 0.722552 0.623431Z" fill="#00263C"/></svg></span>',
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '15px',
+                    slidesToShow: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '15px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+        });
 
-   
+    }
+});
+</script>
+    <section id="events_slider" class="green_section">
+        <div class="container btns_wrapper_section">
+            <div class="row">
+                <div class="col-12">
+                    <button onclick="copytoclipboard('events_slider_css')" class="btn">copy style</button>
+                    <button onclick="copytoclipboard('events_slider_js')" class="btn">copy script</button>
+                    <button onclick="copytoclipboard('events_slider')" class="btn">Copy html</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section_border">
+                <span>Lorem ipsum dolor</span>
+            </div>
+            <div class="collumns_wrapper">
+                <div class="col2 left">
+                    <div class="title">Lorem ipsum dolor</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="btn_wrapper">
+                        <a href="#" class="border-btn blue">Către evenimente</a>
+                    </div>
+                </div>
+                <div class="col2 right">
+                    <div class="slider_top_nav_wrapper">
+                        <div class="slidernav_wrapper">
+                            <div class="customdots"></div>
+                            <div class="navigationbar"></div>
+                        </div>
+                        <div class="slider_top_nav">
+                            <div class="slide_item">
+                                <div class="img_wrap">
+                                    <img src="https://plus.unsplash.com/premium_photo-1674582743901-7e438e0e5ea0?q=80&w=1947&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
+                                </div>
+                                <div class="slide_details">
+                                    <div class="date">February day, year</div>
+                                    <div class="location">Lorem ipsum</div>
+                                </div>
+                                <div class="slidetitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                            <div class="slide_item">
+                                <div class="img_wrap">
+                                    <img src="https://plus.unsplash.com/premium_photo-1674582743901-7e438e0e5ea0?q=80&w=1947&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
+                                </div>
+                                <div class="slide_details">
+                                    <div class="date">February day, year</div>
+                                    <div class="location">Lorem ipsum</div>
+                                </div>
+                                <div class="slidetitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                            <div class="slide_item">
+                                <div class="img_wrap">
+                                    <img src="https://plus.unsplash.com/premium_photo-1674582743901-7e438e0e5ea0?q=80&w=1947&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
+                                </div>
+                                <div class="slide_details">
+                                    <div class="date">February day, year</div>
+                                    <div class="location">Lorem ipsum</div>
+                                </div>
+                                <div class="slidetitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style type="text/css">
+    .btns_wrapper_section {
+        padding: 35px 15px;
+    }
 
-</style>
-<div class="container btns_wrapper_section">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="copytoclipboard('slider2_css')" class="btn">copy style</button>
-			<button onclick="copytoclipboard('slider2_js')" class="btn">Copy JS</button>
-			<button onclick="copytoclipboard('slider2')" class="btn">Copy html</button>
-		</div>
-	</div>
-</div>
-<section id="slider2" class="sldier_section sldtype2">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				
-				<div class="slider_type2">
-					<div class="slide_item">
-						<div class="image_wrapper">
-							<img src="assets/about_img.jpg" class="img-fluid">
-						</div>
-					</div>
-					<div class="slide_item">
-						<div class="image_wrapper">
-							<img src="assets/about_img.jpg" class="img-fluid">
-						</div>
-					</div>
-					<div class="slide_item">
-						<div class="image_wrapper">
-							<img src="assets/about_img.jpg" class="img-fluid">
-						</div>
-					</div>
-				</div>
-				<div class="slider_navigation_cstm"></div>
-
-				
-			</div>
-		</div>
-	</div>
-	
-</section>
-
-<style type="text/css">
-   .btns_wrapper_section {
-   	padding: 35px 15px;
-   }
     .cstm_input_design {
         display: block;
         position: relative;
@@ -1167,220 +1831,219 @@ jQuery(document).ready(function() {
         transform: rotate(35deg);
     }
 
-    
+
 
 
     /*btns*/
 
-.btn_line_bottom,
-.btn.btn_line_bottom {
-	border: 0;
-	border-bottom: 1px solid #252D39;
-	border-radius: 0;
-	padding: 11px 0;
-}
+    .btn_line_bottom,
+    .btn.btn_line_bottom {
+        border: 0;
+        border-bottom: 1px solid #252D39;
+        border-radius: 0;
+        padding: 11px 0;
+    }
 
 
-.btn_white:link,
-.btn_white:visited,
-.btn_white {
-	color: #FFF;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 20px 40px;
-	text-align: center;
-	border-radius: 120px;
-	border: 1px solid #FFF;
-}
+    .btn_white:link,
+    .btn_white:visited,
+    .btn_white {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px 40px;
+        text-align: center;
+        border-radius: 120px;
+        border: 1px solid #FFF;
+    }
 
 
-.btn_yellow_border:link,
-.btn_yellow_border:visited,
-.btn_yellow_border {
-	color: #FFF;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 20px 40px;
-	text-align: center;
-	border-radius: 120px;
-	border: 1px solid #F9DA6D;
-}
+    .btn_yellow_border:link,
+    .btn_yellow_border:visited,
+    .btn_yellow_border {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px 40px;
+        text-align: center;
+        border-radius: 120px;
+        border: 1px solid #F9DA6D;
+    }
 
-.btn_wrapper_center {
-	text-align: center;
-}
+    .btn_wrapper_center {
+        text-align: center;
+    }
 
-.btn_line:link,
-.btn_line:visited,
-.btn_line {
-	position: relative;
-	display: inline-block;
-	color: #252D39;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	padding-bottom: 11px;
-	text-decoration: none;
-}
-.btn_line:after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 1px;
-	background: #252D39;
-	top: initial;
-	bottom: 0;
-	left: 0;
-}
+    .btn_line:link,
+    .btn_line:visited,
+    .btn_line {
+        position: relative;
+        display: inline-block;
+        color: #252D39;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        padding-bottom: 11px;
+        text-decoration: none;
+    }
 
-.btn:visited,
-.btn:link {
-	color: #252D39;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	
-	text-align: center;
-}
+    .btn_line:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #252D39;
+        top: initial;
+        bottom: 0;
+        left: 0;
+    }
 
-.btn:hover {
-	color: #252D39;
-	border: 1px solid #252D39;
-	background: #F9DA6D;
-}
+    .btn:visited,
+    .btn:link {
+        color: #252D39;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
 
-.btn {
-	display: inline-flex;
-	color: #252D39;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	
-	text-align: center;
-	padding: 18px 30px;
-	border-radius: 120px;
-	border: 1px solid #F9DA6D;
-	text-decoration: none;
-}
+        text-align: center;
+    }
 
-.btn i {
-	margin-left: 10px;
-}
+    .btn:hover {
+        color: #252D39;
+        border: 1px solid #252D39;
+        background: #F9DA6D;
+    }
 
-.btn_round_transparent {
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	color: #252D39;
-	
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	border-radius: 120px;
-	border: 1px solid #252D39;
-	padding: 16px 30px;
-}
+    .btn {
+        display: inline-flex;
+        color: #252D39;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
 
-.btn_round_transparent a {
-	color: #252D39;
-	
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
+        text-align: center;
+        padding: 18px 30px;
+        border-radius: 120px;
+        border: 1px solid #F9DA6D;
+        text-decoration: none;
+    }
 
-.btn_round_transparent .icon {
-    display: inline-block;
-    margin-right: 5px;
-    vertical-align: middle;
-}
+    .btn i {
+        margin-left: 10px;
+    }
 
-.btn_round_colored {
-	padding: 16px 30px;
-	border-radius: 120px;
-	background: #27303B;
-	
-	color: #FFF;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-}
+    .btn_round_transparent {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #252D39;
 
-.btn_round_colored a {
-	color: #FFF;
-	font-family: Montserrat;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	letter-spacing: 1.8px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-.btn_round_colored .icon {
-    display: inline-block;
-    margin-right: 5px;
-    vertical-align: middle;
-}
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        border-radius: 120px;
+        border: 1px solid #252D39;
+        padding: 16px 30px;
+    }
+
+    .btn_round_transparent a {
+        color: #252D39;
+
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .btn_round_transparent .icon {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .btn_round_colored {
+        padding: 16px 30px;
+        border-radius: 120px;
+        background: #27303B;
+
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+    }
+
+    .btn_round_colored a {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .btn_round_colored .icon {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
 
 
-/* end btns*/
+    /* end btns*/
     </style>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-  
-function copytoclipboard(desired_id) {
-  // Get the text field
-  var copyText = document.getElementById(desired_id);
+    function copytoclipboard(desired_id) {
+        // Get the text field
+        var copyText = document.getElementById(desired_id);
 
-  // Copy the text inside the text field
+        // Copy the text inside the text field
 
-// console.log(desired_id);
-// console.log(copyText.innerHTML);
+        // console.log(desired_id);
+        // console.log(copyText.innerHTML);
 
-  navigator.clipboard.writeText(copyText.innerHTML);
-  
-  // Alert the copied text
-  alert("Copied code");
-}
+        navigator.clipboard.writeText(copyText.innerHTML);
+
+        // Alert the copied text
+        alert("Copied code");
+    }
     </script>
 </body>
 
